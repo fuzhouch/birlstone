@@ -6,7 +6,7 @@
 // use super::paragraph;
 // use super::inline;
 
-const HIGHEST_ACCEPTABLE_DOCUMENT_VERSION : i32 = 1;
+const HIGHEST_ACCEPTABLE_DOCUMENT_VERSION: i32 = 1;
 
 /// Toplevel parser interface for ReStructuredText.
 #[derive(Debug,Clone,Copy)]
@@ -17,9 +17,7 @@ pub struct ReStructuredText {
 impl ReStructuredText {
     /// Create a new ReStructuredText parser.
     pub fn new() -> ReStructuredText {
-        ReStructuredText {
-            version: HIGHEST_ACCEPTABLE_DOCUMENT_VERSION
-        }
+        ReStructuredText { version: HIGHEST_ACCEPTABLE_DOCUMENT_VERSION }
     }
 
     /// Get version of current parser.
