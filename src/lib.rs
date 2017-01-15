@@ -11,11 +11,20 @@
         unused_import_braces,
         unused_qualifications)]
 
-//! # Birlstone: RuStructuredText processing library
+//! Birlstone: RuStructuredText processing library
 //! Convert ReStructuredText documentation to HTML files.
+
+mod rst;
+
+pub use rst::parser::ReStructuredText;
 
 #[cfg(test)]
 mod tests {
+    use super::ReStructuredText;
+
     #[test]
-    fn it_works() {}
+    fn create_rst_parser() {
+        let rst = ReStructuredText::new();
+        assert!(rst.version() == 1);
+    }
 }
