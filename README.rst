@@ -1,4 +1,4 @@
-Master: |MasterBranchCI|_ Dev: |MyDevBranchCI|_
+|MasterBranchCI|_ |MyDevBranchCI|_
 
 ===================
 Birlstone project
