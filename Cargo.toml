@@ -1,0 +1,11 @@
+[package]
+name = "birlstone"
+version = "0.1.0"
+authors = ["fuzhou.chen <fuzhouch@gmail.com>"]
+repository = "https://github.com/fuzhouch/rustruct.git"
+homepage = "https://github.com/fuzhouch/rustruct"
+license = "MIT"
+readme = "README.rst"
+description = "ReStructuredText to HTML converter library."
+
+[dependencies]
