@@ -1,4 +1,14 @@
-|MasterBranchCI|_ |MyDevBranchCI|_
+.. image:: https://travis-ci.org/fuzhouch/birlstone.svg?branch=master
+   :target: https://github.com/fuzhouch/birlstone
+   :alt: Release branch status: master
+
+.. image:: https://travis-ci.org/fuzhouch/birlstone.svg?branch=fuzhouch
+   :target: https://github.com/fuzhouch/birlstone/tree/fuzhouch
+   :alt: Development branch status: fuzhouch
+
+.. image:: https://bitbucket-badges.atlassian.io/badge/fuzhouch/birlstone.svg
+   :target: https://bitbucket.org/fuzhouch/birlstone
+   :alt: Bitbucket Development branch status: master
 
 ===================
 Birlstone project
@@ -73,22 +83,16 @@ major branches existing by default:
 - ``Master``: The release branch. All release points will be tagged here.
 - ``Fuzhouch``: My own development branch.
 
-Both branches are integrated with Travis-CI, so you can see badges in
-the beginning of this documentation.
+Both branches are integrated with `Travis-CI`_, so you can see badges
+in the beginning of this documentation.
 
 Meanwhile, a mirror repository from Bitbucket_ also hosts my
 development branch. Unlike the Github release repository, the ``master``
 branch of Bitbucket_ repository is mapped to ``fuzhouch`` branch in
 Github_. The mirror repository is useful for developers who want to
 consume the development code, since Cargo does not allow us specify
-branch name when trying to consume dependencies directly via Git path.
-(reference here_)
-
-.. |MasterBranchCI| image:: https://travis-ci.org/fuzhouch/birlstone.svg?branch=master
-.. _MasterBranchCI: http://github.com/fuzhouch/birlstone
-
-.. |MyDevBranchCI| image:: https://travis-ci.org/fuzhouch/birlstone.svg?branch=fuzhouch
-.. _MyDevBranchCI: https://github.com/fuzhouch/birlstone/tree/fuzhouch
+branch name when trying to consume dependencies directly via Git path
+(reference here_).
 
 .. _Bitbucket: https://bitbucket.org/fuzhouch/birlstone
 .. _Github: http://github.com/fuzhouch/birlstone
