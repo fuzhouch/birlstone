@@ -1,0 +1,17 @@
+# Copied from https://bitbucket.org/atlassian/pipelines-examples-rust
+# Source: https://bitbucket.org/atlassian/pipelines-examples-rust/src/a5a6cd6edf8d20f9a5061ed8c73837e2614d3a39/bitbucket-pipelines.yml?fileviewer=file-view-default
+
+image: atlassianlabs/buildpack-deps-rust
+
+pipelines:
+  branches:
+    master:
+      - step:
+          script:
+            - echo "Update Rust toolchain"     ; rustup update
+            - echo "Build lib"                 ; cargo build --release
+            - echo "Test lib"                  ; cargo test --lib --release -v --no-fail-fast -- --nocapture --test
+            - echo "Test documentation"        ; cargo test --doc --release -v --no-fail-fast -- --nocapture --test
+            - echo "Test benchmark"            ; cargo test --lib --release -v --no-fail-fast -- --nocapture --bench
+            - echo "Build cmdline"             ; cargo build --release --features cmdline
+            # TODO Add test for cmdline
