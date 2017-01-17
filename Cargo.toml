@@ -9,3 +9,9 @@ readme = "README.rst"
 description = "ReStructuredText to HTML converter library."
 
 [dependencies]
+log4rs = { version = "0.5.2", optional = true }
+log = "0.3.6"
+
+[features]
+default = [ ]
+cmdline = [ "log4rs" ]

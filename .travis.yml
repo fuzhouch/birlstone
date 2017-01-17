@@ -6,3 +6,9 @@ rust:
 matrix:
     allow_failures:
         - rust: nightly
+
+# Make sure we are building all components
+
+script:
+    - cargo build --features "cmdline" --verbose
+    - cargo test --features "cmdline" --verbose

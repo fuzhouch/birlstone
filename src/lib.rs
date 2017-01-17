@@ -14,9 +14,13 @@
 //! Birlstone: RuStructuredText processing library
 //! Convert ReStructuredText documentation to HTML files.
 
+#[macro_use]
+extern crate log;
+
 mod rst;
 
 pub use rst::parser::ReStructuredText;
+
 
 #[cfg(test)]
 mod tests {
