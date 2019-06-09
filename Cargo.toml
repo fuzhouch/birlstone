@@ -1,7 +1,7 @@
 [package]
 name = "birlstone"
 version = "0.1.0"
-authors = ["Fuzhou Chen <fuzhouch@microsoft.com>"]
+authors = ["fuzhou.chen <fuzhouch@gmail.com>"]
 edition = "2018"
 
 [dependencies]
